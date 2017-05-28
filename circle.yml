@@ -1,15 +1,13 @@
-machine:
-  node:
-    version: 4
-
 checkout:
   post:
     - git submodule update --init
 
 dependencies:
+  cache_directories:
+    - ~/.cache/yarn
   override:
-    - npm install -g hexo-cli
-    - npm install
+    - yarn add hexo-cli
+    - yarn
 
 test:
   override:
@@ -20,4 +18,4 @@ deployment:
   s3:
     branch: /^(master|version-.*)/
     commands:
-      - npm run deploy
+      - yarn run deploy
