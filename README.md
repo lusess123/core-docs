@@ -1,14 +1,5 @@
-# docs
+# Apollo Core Docs Have Moved!
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/apollographql/core-docs.svg)](https://greenkeeper.io/)
+See them live here:[https://www.apollographql.com/docs/react/](https://www.apollographql.com/docs/react/).
 
-To run:
-
-```
-git submodule init
-git submodule update
-cd code && npm install
-cd ..
-npm install
-npm start
-```
+Contribute here: [https://github.com/apollographql/apollo-client/tree/master/docs](https://github.com/apollographql/apollo-client/tree/master/docs)
